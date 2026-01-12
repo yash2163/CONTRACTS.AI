@@ -11,7 +11,7 @@ sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from src.config import Config
 
 # Initialize Embeddings
-embeddings = GoogleGenerativeAIEmbeddings(model="models/embedding-001", google_api_key=Config.GOOGLE_API_KEY)
+embeddings = GoogleGenerativeAIEmbeddings(model="models/text-embedding-004", google_api_key=Config.GOOGLE_API_KEY)
 
 def extract_text_from_pdf(file_bytes):
     """
